@@ -19,7 +19,8 @@ class Solution:
             dfs(grid, i, j + 1)  # right
         
         # Main logic to count the number of islands
-        islands = 0
+        
+    islands = 0
         for i in range(len(grid)):
             for j in range(len(grid[0])):
                 if grid[i][j] == 'L':  # If we find unvisited land ('L')
