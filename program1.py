@@ -27,4 +27,3 @@ class Solution:
                     islands += 1       # Increment the island count
         
         return islands              
-        
