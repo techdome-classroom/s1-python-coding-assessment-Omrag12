@@ -20,7 +20,7 @@ class Solution:
         
         # Main logic to count the number of islands
         islands = 0
-        for i in range(len(grid)):
+    for i in range(len(grid)):
             for j in range(len(grid[0])):
                 if grid[i][j] == 'L':  # If we find unvisited land ('L')
                     dfs(grid, i, j)    # Perform DFS to mark the entire island
