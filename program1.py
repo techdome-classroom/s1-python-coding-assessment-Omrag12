@@ -10,7 +10,7 @@ class Solution:
             
             grid[i][j] = 'W'
             
-            dfs(grid, i - 1, j)  # up
+            dfs(grid, i - 1, j)  
             dfs(grid, i + 1, j)  
             dfs(grid, i, j - 1)  
             dfs(grid, i, j + 1)  
