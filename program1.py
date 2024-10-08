@@ -3,8 +3,8 @@ class Solution:
     def getTotalIsles(self, grid: list[list[str]]) -> int:
     #    write your code here
         if not grid:
-               return 0
-          def dfs(grid, i, j):
+            return 0
+        def dfs(grid, i, j):
             # Check if we're out of bounds or at water ('W')
             if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]) or grid[i][j] == 'W':
                 return
