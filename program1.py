@@ -12,7 +12,7 @@ class Solution:
             
             dfs(grid, i - 1, j)  # up
             dfs(grid, i + 1, j)  # down
-            dfs(grid, i, j - 1)  # left
+            dfs(grid, i, j - 1)  
             dfs(grid, i, j + 1)  
         
         islands = 0
