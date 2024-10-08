@@ -10,7 +10,6 @@ class Solution:
             
             grid[i][j] = 'W'
             
-            # Explore the neighboring cells (up, down, left, right)
             dfs(grid, i - 1, j)  # up
             dfs(grid, i + 1, j)  # down
             dfs(grid, i, j - 1)  # left
