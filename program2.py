@@ -19,6 +19,5 @@ def decode_message( s: str, p: str) -> bool:
                 # If current characters match or the pattern has '?', propagate the previous result
                 dp[i][j] = dp[i - 1][j - 1]
             elif p[j - 1] == '*':
-                # '*' can match any sequence: we check if skipping '*' or matching it works
                 dp[i][j] = dp[i - 1][j] or dp[i][j - 1]
    return dp[m][n]
