@@ -8,7 +8,6 @@ class Solution:
             if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]) or grid[i][j] == 'W':
                 return
             
-            # Mark this cell as visited by setting it to 'W'
             grid[i][j] = 'W'
             
             # Explore the neighboring cells (up, down, left, right)
