@@ -24,4 +24,3 @@ def decode_message( s: str, p: str) -> bool:
     
     # The result is whether the entire string matches the entire pattern
    return dp[m][n]
-   
