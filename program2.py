@@ -8,7 +8,7 @@ def decode_message( s: str, p: str) -> bool:
    dp[0][0] = True
     
     # Handle the case where the pattern contains '*' at the beginning
-    for j in range(1, n + 1):
+   for j in range(1, n + 1):
         if p[j - 1] == '*':
             dp[0][j] = dp[0][j - 1]
 
